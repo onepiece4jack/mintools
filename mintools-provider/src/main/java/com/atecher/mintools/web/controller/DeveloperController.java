@@ -125,7 +125,8 @@ public class DeveloperController {
         try {
             ObjectMapper mapper = new ObjectMapper();
             Object obj = mapper.readValue(json, Object.class);
-            return new ResponseResult("success", pettyFormat ? mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj) : mapper.writeValueAsString(obj));
+            String formatJson = pettyFormat ? mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj) : mapper.writeValueAsString(obj);
+            return new ResponseResult("success", formatJson);
         } catch (JsonParseException e) {
             JsonLocation location = e.getLocation();
             int column = location.getColumnNr();

@@ -9,11 +9,6 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
-/**
- * @Author: hanhongwei
- * @Description:
- * @Date: Created on 2017/12/13
- */
 
 @Service
 public class ToolServiceImpl implements IToolService {

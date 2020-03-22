@@ -2,9 +2,7 @@ package com.atecher.mintools.web.util;
 
 import java.io.Serializable;
 
-/**
- * Created by hanhongwei on 2016/6/22.
- */
+
 public class ResponseResult<T> implements Serializable {
     private String code;
     private T result;

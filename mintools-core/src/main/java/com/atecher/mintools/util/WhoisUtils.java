@@ -24,9 +24,5 @@ public class WhoisUtils {
 
     }
 
-//    public static void main(String[] args) throws Exception {
-//        getWhoisInfo("mintools.net");
-//    }
-
 
 }
