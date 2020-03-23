@@ -49,7 +49,7 @@
         <div class="layui-tab-content" style="height: 36px;">
             <div class="layui-col-md12">
                 <form th:action="@{/search/}" class="index-search-form col-lg-12 layui-form">
-                    <input type="text" name="q" id="link" value="" required="" autocomplete="off" placeholder="Search from ToolFK &amp; Books &amp; Apidoc ..." class="layui-input layui-input-custom autocompleter-node" style="" />
+                    <input type="text" name="q" id="link" value="" required="" autocomplete="off" placeholder="搜索工具、文档，例如：base64、java" class="layui-input layui-input-custom autocompleter-node" style="" />
                     <div class="autocompleter " id="autocompleter-1">
                         <ul class="autocompleter-list"></ul>
                     </div>
@@ -59,8 +59,6 @@
             </div>
         </div>
     </div>
-
-    <div class="clear"></div>
 </div>
 
 <div class="container" layout:fragment="content">

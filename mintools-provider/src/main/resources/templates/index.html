@@ -8,14 +8,12 @@
 <div data-layout-fragment='content' class="container">
     <a class="app" th:title="${t.title}" th:each="t,stat : ${tools}" th:href="@{{link}(link=${t.href})}" th:target="${t.target}">
         <div class="padding">
-            <div class="img_cont" style="">
-                <i class="iconfont icon-chunjie icon-color" style=""></i>
-            </div>
+
+            <div class="img_cont"><img th:src="@{/{icon}(icon=${t.icon})}"
+                                       th:alt="${t.title}"/></div>
             <div class="text" style="">
                 <div class="title">
                     <h2 style="" th:text="${t.title}"><i class="iconfont icon-color icon-new" style=""></i></h2>
-                </div>
-                <div class="desc" style="" th:text="${t.description}">
                 </div>
             </div>
         </div>
