@@ -7,6 +7,7 @@ body {
 
 .container {
     width: 1400px;
+    margin-top: 20px;
 }
 
 .navbar {
@@ -340,7 +341,7 @@ div .padding {
     /* Box */
     height: 259px;
     width: 194.25px;
-    border: 0px none rgb(0, 0, 0);
+    border: 1px solid rgb(230, 230, 230);
     border-top: 0px none rgb(0, 0, 0);
     border-right: 0px none rgb(0, 0, 0);
     border-bottom: 0px none rgb(0, 0, 0);
@@ -359,7 +360,7 @@ div .padding {
     right: auto;
     left: auto;
     float: none;
-    display: flex;
+    display: inline-block;
     clear: none;
     z-index: auto;
 
@@ -383,7 +384,6 @@ div .padding {
     /* Effects */
     transform: none;
     transition: all 0s ease 0s;
-    outline: rgb(255, 0, 0) dashed 1px;
     outline-offset: 0px;
     box-sizing: content-box;
     resize: none;

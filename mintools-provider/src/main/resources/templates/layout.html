@@ -14,6 +14,12 @@
     <link href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"/>
     <link th:href="@{/themes/default/css/style.css}" rel="stylesheet"/>
     <link th:href="@{/themes/default/css/index.css}" rel="stylesheet"/>
+    <link th:href="@{/themes/default/css/layui.css}" rel="stylesheet"/>
+    <link th:href="@{/themes/default/css/codemirror.css}" rel="stylesheet"/>
+    <link th:href="@{/themes/default/css/font_851841_jqfiwnlyy8s.css}" rel="stylesheet"/>
+    <link th:href="@{/themes/default/css/jquery.autocompleter.css}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://www.toolfk.com/tools/js/layer/skin/default/layer.css?v=3.0.11110" />
+    <link rel="stylesheet" href="https://www.toolfk.com/tools/js/layui/css/modules/layer/default/layer.css?v=3.1.1" />
     <link th:href="@{/assets/thirdparty/layer/skin/layer.css}" rel="stylesheet"/>
     <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.js"></script>
@@ -24,10 +30,10 @@
 
 <div class="apps" id="apps" style="">
     <div class="layui-tab layui-tab-brief" style="width: 100%;">
+        <a th:href="@{/}" class="navbar-brand">
+            <img style="width:165px;height:45px;margin-top:5px;" th:src="@{/themes/default/images/logo.png}"/>
+        </a>
         <ul class="layui-tab-title" style="">
-            <li data-index="toolfk" class="layui-this"><a th:href="@{/}" class="navbar-brand"><img style="width:165px;height:45px;margin-top:5px;"
-                                                                                                   th:src="@{/themes/default/images/logo.png}"/></a></li>
-            <li style=""><a href="/category-development.html" class="nav-link" title="ToolFk:日常开发分类" style="">开发工具</a></li>
             <li><a th:href="@{/}" class="nav-link">全部工具</a></li>
             <li><a th:href="@{/category/pdf}" class="nav-link">PDF处理</a></li>
             <li><a th:href="@{/category/format}" class="nav-link">格式化工具</a></li>
@@ -47,7 +53,7 @@
                     <div class="autocompleter " id="autocompleter-1">
                         <ul class="autocompleter-list"></ul>
                     </div>
-                    <button class="layui-btn index-search" type="submit" style=""><img th:src="@{/themes/default/images/logo.png}" width="22px" /> </button>
+                    <button class="layui-btn index-search" type="submit" style=""><img th:src="@{/themes/default/images/search.png}" width="22px" /> </button>
                     <input type="hidden" id="clicked" value="search" />
                 </form>
             </div>

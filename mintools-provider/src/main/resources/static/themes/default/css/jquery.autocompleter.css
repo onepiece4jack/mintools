@@ -1,0 +1,71 @@
+.autocompleter {
+    width: 100%;
+    display: none;
+}
+
+.autocompleter-show {
+    display: block;
+}
+
+.autocompleter,
+.autocompleter-hint {
+    position: absolute;
+    width: 88%;
+}
+
+.autocompleter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.autocompleter-item {
+    cursor: pointer;
+}
+
+.autocompleter-item:hover {
+    /* Hover State */
+}
+
+.autocompleter-item-selected {
+    /* Selected State */
+}
+
+.autocompleter-item strong {
+    /* Highlight Matches */
+}
+
+.autocompleter-hint {
+    width: 100%;
+    display: none;
+
+    /** Need absolute position over input text */
+}
+
+.autocompleter-hint-show {
+    display: block;
+}
+
+.autocompleter-hint span {
+    color: transparent;
+}
+
+
+.autocompleter-list {
+    background: #fff;
+    border: 1px solid #ccc;
+    _overflow: hidden;
+    box-shadow: 1px 1px 3px #ededed;
+    -webkit-box-shadow: 1px 1px 3px #ededed;
+    -moz-box-shadow: 1px 1px 3px #ededed;
+    -o-box-shadow: 1px 1px 3px #ededed;
+}
+.autocompleter-list li {
+
+    font: 14px arial;
+    line-height: 30px;
+    padding: 0 12px;
+}
+.autocompleter-list li:hover{color: #000;  display: block;}

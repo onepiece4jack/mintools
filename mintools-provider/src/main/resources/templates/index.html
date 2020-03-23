@@ -6,25 +6,7 @@
 </head>
 <body>
 <div data-layout-fragment='content' class="container">
-    <!--<div class="row">
-        <div class="col-xs-8">
-            <div class="list-group mt-packages">
-                <a class="mt-package list-group-item" th:each="t,stat : ${tools}" th:href="@{{link}(link=${t.href})}"
-                   th:target="${t.target}">
-                    <div class="row" th:id="'tool-'+${t.code}">
-                        <div class="col-xs-2"><img th:src="@{/themes/default/images/tools/{icon}(icon=${t.icon})}"
-                                                   th:alt="${t.title}"/></div>
-                        <div class="col-xs-2" th:text="${t.title}"></div>
-                        <div class="col-xs-8">
-                            <p th:text="${t.description}"></p>
-                            &lt;!&ndash;<p th:text="'标签:'+${t.tag}"></p>&ndash;&gt;
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>-->
-    <a class="app" th:title="${t.title}" th:each="t,stat : ${tools}" th:href="@{{link}(link=${t.href})}">
+    <a class="app" th:title="${t.title}" th:each="t,stat : ${tools}" th:href="@{{link}(link=${t.href})}" th:target="${t.target}">
         <div class="padding">
             <div class="img_cont" style="">
                 <i class="iconfont icon-chunjie icon-color" style=""></i>
