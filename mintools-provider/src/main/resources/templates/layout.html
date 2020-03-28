@@ -31,7 +31,7 @@
 <div class="apps" id="apps" style="">
     <div class="layui-tab layui-tab-brief" style="width: 100%;">
         <a th:href="@{/}" class="navbar-brand">
-            <img style="width:165px;height:45px;margin-top:5px;" th:src="@{/themes/default/images/logo.png}"/>
+            <img style="width:165px;height:45px;margin-top:5px;" th:src="@{/themes/default/images/logo_onepiece.png}"/>
         </a>
         <ul class="layui-tab-title" style="">
             <li><a th:href="@{/}" class="nav-link">全部工具</a></li>
@@ -48,13 +48,12 @@
         </ul>
         <div class="layui-tab-content" style="height: 36px;">
             <div class="layui-col-md12">
-                <form th:action="@{/search/}" class="index-search-form col-lg-12 layui-form">
-                    <input type="text" name="q" id="link" value="" required="" autocomplete="off" placeholder="搜索工具、文档，例如：base64、java" class="layui-input layui-input-custom autocompleter-node" style="" />
-                    <div class="autocompleter " id="autocompleter-1">
-                        <ul class="autocompleter-list"></ul>
-                    </div>
+                <form th:action="@{/search/}" class="index-search-form col-lg-12 layui-form"
+                      onsubmit="search.value=searchText.value;return true;">
+                    <input name="s" id="search" type="hidden"/>
+                    <input type="text" class="form-control search clearable" id="searchText"
+                           placeholder="搜索工具、文档，例如：base64、java">
                     <button class="layui-btn index-search" type="submit" style=""><img th:src="@{/themes/default/images/search.png}" width="22px" /> </button>
-                    <input type="hidden" id="clicked" value="search" />
                 </form>
             </div>
         </div>
@@ -74,7 +73,7 @@
                 -
                 <a href="http://tool.chinaz.com/" target="_blank" style="color:#666">站长工具</a>
             </p>
-            <p>Copyright © 技巧网 2020 备案号：粤ICP备20012807号-1</p>
+            <p>Copyright © ONEPIECE 2020 备案号：粤ICP备20012807号-1</p>
         </div>
     </div>
 </footer>
